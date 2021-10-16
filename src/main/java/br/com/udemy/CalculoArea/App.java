@@ -25,8 +25,6 @@ public class App {
 			System.out.printf("\nArea = %.2f metros\n", ca.calculaArea(largura, comprimento));
 			System.out.printf("Preço = %.2f$\n", ca.precoArea(metroQuadrado));
 			
-			System.out.println("\nPrograma encerrado com sucesso!");
-			
 		} catch (NullPointerException n) {
 			System.err.println("\n*** O campo não pode ser nulo ***");
 		} catch (InputMismatchException e) {
@@ -35,6 +33,7 @@ public class App {
 			e.printStackTrace();
 		} finally {
 			sc.close();
+			System.out.println("\nPrograma encerrado com sucesso!");
 		}
 		
 		
